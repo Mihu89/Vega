@@ -28,8 +28,9 @@ namespace Vega
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddDbContext<VegaDbContext>(options => 
+            services.AddDbContext<VegaDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("Default")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
