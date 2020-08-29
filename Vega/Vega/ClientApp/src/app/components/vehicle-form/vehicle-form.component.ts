@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MakeService } from '../../services/make.service';
-import { FeatureService } from '../../services/feature.service';
 import { VehicleService } from '../../services/vehicle.service';
 
 @Component({
