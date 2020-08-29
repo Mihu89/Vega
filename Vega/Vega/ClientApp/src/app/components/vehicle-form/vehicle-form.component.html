@@ -1,5 +1,5 @@
 <h1>Create New Vehicle</h1>
-<form #f="ngForm" (nfSubmit)="saveVehicle()" novalidate>
+<form #f="ngForm" (ngSubmit)="submit()" novalidate>
   <div class="form-group">
     <label for="make">Make</label>
     <select

@@ -29,5 +29,8 @@ vehicle: any = {};
         let selectedMake = this.makes.find(m => m.id == this.vehicle.make);
         this.models = selectedMake ? selectedMake.models : [];
     }
-    saveVehicle(){}
+
+    submit(){
+        this.vehicleService.createVehicle(this.vehicle).subscribe(x => console.log(JSON.stringify(x, null, 4)));
+    }
 }
